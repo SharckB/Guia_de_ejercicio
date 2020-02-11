@@ -1,0 +1,41 @@
+package tarea_7;
+
+import java.util.Scanner;
+import java.io.*;
+/**
+ *
+ * @author a
+ */
+public class Tarea_7{ 
+   public static Scanner s = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        int n1,n2,n3;
+        
+
+        
+Scanner objectscan = new Scanner(System.in);
+
+
+
+System.out.println("Ingrese numero     : " );
+n1= s.nextInt();
+System.out.println("Ingrese numero     : " );
+n2= s.nextInt();
+System.out.println("Ingrese numero     : " );
+n3= s.nextInt();
+
+
+if (n1==n2 && n2==n3 && n1==n3) {
+  System.out.print("El Triangulo es Equilatero");
+} 
+ 
+ if ((n1==n2 && n2!=n3 && n1!=n3)|| (n1!=n2 && n2!=n3 && n3==n1)|| (n1!=n2 && n2==n3 && n3!=n1)) {
+        System.out.print("El triangulo es isoceles");     
+    } 
+if (n1!=n2 && n2!=n3 && n1!=n3)
+{ System.out.println("El teiangulo es Escaleno");
+  
+    }
+    }
+}

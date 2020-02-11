@@ -1,0 +1,84 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tarea_5;
+import java.util.Scanner;
+import java.io.*;
+
+/**
+ *
+ * @author a
+ */
+public class Tarea_5 {
+public static Scanner s= new Scanner(System.in);
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    
+    double ventas=0;
+    double costoventas=0;
+    double Ubruta=0;
+    double GO=0;
+    double Uoperacion=0;
+    double Oproductos=0;
+    double Ogastos=0;
+    double isr=0;
+    double impuesto=0;
+    double ptu=0;
+    double uneta=0;
+    
+ Scanner objectscan = new Scanner(System.in);
+ 
+ System.out.println("Ingrese El Total de Ventas"); 
+ ventas=s.nextDouble();
+ System.out.println("Ingrese Costo de Ventas"); 
+ costoventas=s.nextDouble();
+ System.out.println("Ingrese Gastos de Operacion"); 
+ GO=s.nextDouble();
+ System.out.println("Ingrese El Total de Otros Productos"); 
+ Oproductos=s.nextDouble();
+ System.out.println("Ingrese El Total de otros Gastos"); 
+ Ogastos=s.nextDouble();
+ System.out.println("ingrese total de los trabajadores en las utilidades"); 
+ ptu=s.nextDouble();
+ System.out.println(""); 
+
+ Ubruta=ventas-costoventas;
+ Uoperacion=Ubruta-GO;
+ isr=(Uoperacion+Oproductos)-Ogastos;
+ impuesto=isr*0.28;
+ uneta=(isr-impuesto)-ptu;
+ 
+System.out.println("_______________________________________________________________________"); 
+System.out.println("");
+System.out.println("               J.H COMERCIALIZACIADORA S.A                       ");
+System.out.println("    Estado de resuktados del 1 de enero al 31 de diciembre de 2010");
+System.out.println("_______________________________________________________________________");
+System.out.println("");
+System.out.println("Ventas                                                         :" +ventas);
+System.out.println("Costo de ventas                                                :" +"-" +costoventas);
+System.out.println("                                                                _________");
+System.out.println("UTILIDAD BRUTA                                                 :" +Ubruta);
+System.out.println("");
+System.out.println("Gastos de Operacion                                            :" +"-" +GO);
+System.out.println("                                                                _________");
+System.out.println("UTILIDADES DE OPERACION                                        :" +Uoperacion);
+System.out.println("");
+System.out.println("Otros Productos                                                :" +Oproductos);
+System.out.println("Otros Gastos                                                   :" +"-" +Ogastos);
+System.out.println("                                                                _________");
+System.out.println("UTILIDADES ANTES DE ISR Y PTU                                  :" +isr);
+System.out.println("");
+System.out.println("Impuesto sobre la renta (ISR)28%                               :" +"-" +impuesto);
+System.out.println("Participacion de trabajadores en las unidades (PTU)            :" +ptu);
+System.out.println("                                                                _________" );
+System.out.println("UTILIDAD NETA                                                  :"+uneta);
+System.out.println("_______________________________________________________________________");
+
+    }
+    
+}

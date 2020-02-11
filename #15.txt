@@ -1,0 +1,57 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tarea_15;
+import java.util.Scanner;
+import java.io.*;
+/**
+ *
+ * @author a
+ */
+public class Tarea_15 {
+public static Scanner s= new Scanner(System.in);
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+     int n=0;
+     double libras=0;
+     double gramos=0;
+     
+     System.out.println("====Ingrese Cantidad de kilogramos que desea convertir====");
+     n=s.nextInt();
+     
+     libras=n*2.205;
+     gramos=n*1000;
+     
+     while (n !=-1){
+         System.out.println("---------------Conversion------------");
+         System.out.println("1-Conversion de kilogramos a libras?");
+         System.out.println("2-Conversion de kilogramos a gamos?");
+         n=s.nextInt();
+         
+         switch (n) {
+             case 1:
+                 System.out.println("Total en libras:  " +libras);
+                 break;
+             case 2:
+                 System.out.println("Total en gramos:  " +gramos);
+                 break;
+                 
+         }
+         System.out.println("");
+            System.out.println(" ===================================================  "); 
+            System.out.println(" ====Presione 0 para ingresar al menu principal==== ");
+            n= s.nextInt();
+                 
+         }
+     }
+     
+     
+     
+     
+        // TODO code application logic here
+    }

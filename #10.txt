@@ -1,0 +1,87 @@
+
+package tarea_10;
+
+import java.util.Scanner;
+import java.io.*;
+/**
+ *
+ * @author a
+ */
+public class Tarea_10 {
+public static Scanner s= new Scanner(System.in);
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+   int n1=0;
+   double n2=0;
+    double d;
+    double e=0;
+    double q=0;
+    double b=0;
+    d=24.65;
+      e=28.40;
+      q=3.22;
+      b=237673.40;
+    
+     Scanner objectscan  = new Scanner(System.in);
+     while (n1 != -1){
+     System.out.println("Seleccione su Moneda:");
+     System.out.println("1-Dolares");
+     System.out.println("2-Euros");
+     System.out.println("3-Quetzales");
+     System.out.println("4-Bitcoint");
+     System.out.println("_______________________");
+     n1= s.nextInt();
+     
+     
+     switch (n1) {
+         case 1:
+         {   System.out.println("Su Moneda es Dolar");
+             System.out.println("Ingrese la cantidad");
+             n2= s.nextDouble();
+             d=n2*24.65;
+             System.out.println("El valor en lps es:" +d);
+             break;} 
+            case 2:
+                { System.out.println("Su Moneda es Euro");
+                System.out.println("Ingrese la cantidad");
+                n2= s.nextDouble();
+                e=n2*28.40;
+                System.out.println("El valor en lps es:" +e);
+             break;      }
+                case 3:
+                {   System.out.println("Su Moneda es Quetzal");
+                    System.out.println("Ingrese la cantidad");
+                    n2= s.nextDouble();
+                     q=n2*3.22;
+                    System.out.println("El valor en lps es:" +q);
+   
+                 break;}
+                       case 4:
+                        {System.out.println("Su Moneda es Bitcoin");
+                        System.out.println("Ingrese la cantidad");
+                        n2= s.nextDouble();
+                        b=n2*237673.40;
+                        System.out.println("El valor en lps es:" +b);
+                         break;}
+               
+         default :
+               System.out.println("Ingrese un numero de 1 al 4");
+     }
+     
+     
+     System.out.println("");
+            System.out.println(" ===================================================  "); 
+            System.out.println(" Presione -1 para salir, 0 para volver al menu ");
+            n1 = s.nextInt();
+     
+               
+       }
+         
+        
+
+    }
+    
+}
+

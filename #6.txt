@@ -1,0 +1,50 @@
+
+package tarea_6;
+
+import java.util.Scanner;
+import java.io.*;
+/**
+ *
+ * @author a
+ */
+public class Tarea_6 { 
+   public static Scanner s = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        int n1,n2,n3;
+        
+
+        
+Scanner objectscan = new Scanner(System.in);
+
+
+
+System.out.println("Ingrese numero     : " );
+n1= s.nextInt();
+System.out.println("Ingrese numero     : " );
+n2= s.nextInt();
+System.out.println("Ingrese numero     : " );
+n3= s.nextInt();
+
+
+if (n1>n2 && n2>n3 ) {
+  System.out.print("El numero mayor es :" +n1);
+} else if (n1<n2 && n1<n3) {
+    System.out.println("El Numero menor es :" +n1);
+} 
+ if (n2>n1 && n2>n3) {
+        System.out.print("Elnumero mayor es :" +n2);     
+    } else if (n2<n1 && n2<n3) {
+        System.out.println("El numero menor es :" +n2);
+    } 
+ if (n3>n1 && n3>n2){
+     System.out.println("El numero mayor es :" +n3);
+ } else if(n3<n1 && n3<n2) {
+     System.out.println("El numero menor es :" +n3);
+ }
+
+        
+  
+    }
+    
+}

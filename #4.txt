@@ -1,0 +1,40 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tarea_4;
+import java.io.*;
+import java.util.Scanner;
+    /**
+/**
+ *
+ * @author a
+ */
+public class Tarea_4 {
+public static Scanner s = new Scanner(System.in);
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double a=0;
+        double b=0;
+        double h=0;
+      
+        
+        
+    Scanner objectscan = new Scanner(System.in);
+    System.out.print("Ingrese area:   ");
+    a= s.nextDouble();
+    
+    System.out.println("Ingrese la base:  ");
+    b= s.nextDouble();
+ //operacion //
+     h= Math.sqrt(Math.pow(a, 2)+ Math.pow(b, 2));
+     //Mat.sqrt es una variable para exponentes de matematicas, y Math.pow es para A al cuadrado//
+     
+     
+     System.out.println("la Hipotenusa es igual a :       " +h);
+    }
+    }  

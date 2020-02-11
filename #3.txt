@@ -1,0 +1,28 @@
+package tarea_3;
+
+import java.util.Scanner;
+import java.io.*;
+/**
+ *
+ * @author a
+ */
+public class Tarea_3 { 
+   public static Scanner s = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        double N1=0;
+        
+Scanner objectscan = new Scanner(System.in);
+
+
+
+System.out.println("Ingrese numero     : " );
+N1= s.nextDouble();
+if (N1 %2==0){
+    System.out.println("El numero es par");}
+    else if(N1!=0) {
+            System.out.println("El numero es impar");
+            } 
+    }
+    
+}

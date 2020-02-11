@@ -1,0 +1,73 @@
+
+
+package pkg2;
+import java.util.Scanner;
+import java.io.*;
+
+
+public class Main {
+    
+
+    public static void main(String[] args) {
+      Scanner s=new Scanner (System.in);
+        
+        System.out.println("Calcular el area");
+        int base=0;
+        int altura=0;
+        double lado=0;
+        int n1=0;
+        int n2=0;
+        int n3=0;
+        int n4=3;
+     while (n1!= -1){
+     System.out.println("==========================CALCULE==============================");
+     System.out.println("1-Area de un Rectangulo");
+     System.out.println("2-Area de un Cubo");
+     System.out.println("3-Area de un cuadrado");
+     System.out.println("Presione -1 para salir y o para ir al menu principal.");
+     n1= s.nextInt();
+     
+     
+     switch (n1) {
+         case 1:
+         {   System.out.println("Ingrese base:");
+             n2= s.nextInt();
+             System.out.println("Ingrese altura:");
+             n3= s.nextInt();
+             base=((n2*n3)/2);
+             
+            
+             System.out.println("El Area de un Recatangulo es de: " +base);
+             n1=0;
+             break;
+         }
+              
+            case 2:
+                {   System.out.println("Ingrese valor del lado del Cubo:");
+             n2= s.nextInt();
+             lado= Math.pow(n2, n4);
+             System.out.println("el area de un cubo es igual a : " +lado);
+             n1=0;
+             break;
+              }
+                case 3:
+                 {   System.out.println("Ingrese base:");
+             n2= s.nextInt();
+             System.out.println("Ingrese altura:");
+             n3= s.nextInt();
+             base=(n1*n2);
+            
+             System.out.println("El area de un Recatangulo es de:" +base);
+             n1=0;
+             break;
+         }  default :
+               System.out.println("Ingrese un numero de 1 al 3");
+     } System.out.println("");
+            System.out.println(" ===================================================  "); 
+            System.out.println(" Presione -1 para salir, 0 para volver al menu ");
+            n1 = s.nextInt();
+     
+// TODO code application logic here
+    }
+    
+}}

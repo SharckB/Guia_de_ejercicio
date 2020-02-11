@@ -1,0 +1,44 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tarea_14;
+import java.util.Scanner;
+import java.io.*;
+/**
+ *
+ * @author a
+ */
+public class Tarea_14 {
+   
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner s=new Scanner (System.in);
+        int meses=0;
+        int cuota=0;
+        int acumulador1=0;
+        double resultado=0;
+        
+        System.out.println("Ingrese la Cantidad de meses que desea ahorar.....");
+        meses= s.nextInt();
+        
+        System.out.println("Ingrese la cuota mensual de ahorro.....");
+        cuota= s.nextInt();
+        
+        for (int i=1; i<=meses; i++) {
+            resultado = i*cuota;
+            acumulador1+=cuota;
+        
+        System.out.println("Mes  " +i +"Su ahorro sera de: " + acumulador1+" lps");
+    }
+        System.out.println("____________________________________________________");
+        System.out.println("Su ahorro total sera de :" +resultado+"lps");
+        // TODO code application logic here
+    }
+    
+}

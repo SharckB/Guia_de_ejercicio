@@ -1,0 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tarea_11;
+import java.util.Scanner;
+import java.io.*;
+
+/**
+ *
+ * @author a
+ */
+public class Tarea_11 {
+public static Scanner s= new Scanner(System.in);
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String... morfa) {
+        int horasnormal=40;
+       
+        int horas=0;
+        float horax=0;
+        float vhorax;
+        float total;
+        
+        
+        System.out.println("Ingrese cantidad de horas trabajadas");
+         horas= s.nextInt();
+          horax= horas-horasnormal;
+          vhorax=horax*246;
+          total=horas*246;
+         if (horasnormal<horas) {
+             System.out.println("EL total de horas extras es: " +horax );
+            System.out.println("El valor de una hora extra de trabajo adicional es de:        246 lps ");
+             System.out.println("El total a pagar por horas extras es de:                      " +vhorax +"lps");
+             System.out.println("                                                             _______________");
+             System.out.println("Su Salario total es;                                          " +total +" lps");
+         }
+         else if(horasnormal>=horas) {
+             System.out.println("El total de horas trabajadas es:    " +horas);
+             System.out.println("Su Sueldo total es de:              " +horas*246 +"lps");
+         }
+         
+}
+    
+}
